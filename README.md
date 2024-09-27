@@ -8,7 +8,7 @@ This project is built upon https://github.com/thuiar/MMSA .
 - CMU-MOSEI
 `python src/train_run_mosei.py`
 # Overview
-![[Pasted image 20240927222926.png]]
+
 
 The main contributions can be summarised as follows: 
 
