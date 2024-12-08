@@ -2,7 +2,9 @@
 Code for FGTI:A FINE-GRAINED TRI-MODAL INTERACTION MODEL FOR MULTIMODAL SENTIMENT ANALYSIS(ICASSP 2024).
 
 This project is built upon https://github.com/thuiar/MMSA .
-The HSIC is from [amber0309/HSIC: Python code of Hilbert-Schmidt Independence Criterion](https://github.com/amber0309/HSIC)
+
+The Hilbert-schmidt independence criteria(HSIC) is based on [Hilbert-schmidt independence criteria](https://github.com/xiao-he/HSIC) .
+
 # Run
 - CMU-MOSI
 `python src/train_run.py`
