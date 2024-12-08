@@ -558,6 +558,66 @@
       }
     }
   },
+  "fgti": {
+    "commonParams": {
+      "need_data_aligned": true,
+      "need_model_aligned": false,
+      "use_finetune": true,
+      "use_bert": true,
+      "early_stop": 8,
+      "update_epochs": 2,
+      "rnncell": "lstm",
+      "use_cmd_sim": true
+    },
+    "datasetParams": {
+      "mosi": {
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "hidden_size": 64,
+        "dropout": 0.1,
+        "reverse_grad_weight": 0.8,
+        "diff_weight": 0.8,
+        "sim_weight": 0.8,
+        "contralLoss_weight":0.04,
+        "sp_weight": 1.0,
+        "grad_clip": 0.8,
+        "weight_decay": 0.0,
+        "transformers": "bert",
+        "pretrained": "bert-base-uncased"
+      },
+      "mosei": {
+        "batch_size": 128,
+        "learning_rate": 0.0001,
+        "hidden_size": 128,
+        "dropout": 0.6,
+        "reverse_grad_weight": 0.8,
+        "contralLoss_weight":0.06,
+        "diff_weight": 0.05,
+        "sim_weight": 0.05,
+        "sp_weight": 1.0,
+        "recon_weight": 1.0,
+        "grad_clip": 0.8,
+        "weight_decay": 5e-5,
+        "transformers": "bert",
+        "pretrained": "bert-base-uncased"
+      },
+      "sims": {
+        "batch_size": 64,
+        "learning_rate": 0.0001,
+        "hidden_size": 128,
+        "dropout": 0.0,
+        "reverse_grad_weight": 0.5,
+        "diff_weight": 0.3,
+        "sim_weight": 1.0,
+        "sp_weight": 1.0,
+        "recon_weight": 0.8,
+        "grad_clip": 1.0,
+        "weight_decay": 5e-5,
+        "transformers": "bert",
+        "pretrained": "bert-base-chinese"
+      }
+    }
+  },
   "mfm": {
     "commonParams": {
       "need_data_aligned": true,
